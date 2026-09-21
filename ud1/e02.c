@@ -28,7 +28,7 @@ int main(){
     media = totale/DIM;
     printf("%d", media);
     printf("Inserire un valore: ");
-    scanf("%d", &a)
+    scanf("%d", &a);
     for(i=0; i<DIM; i++){
         if(altezza[i] == a){
             cnt++;
