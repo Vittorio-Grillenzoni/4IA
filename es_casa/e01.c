@@ -6,3 +6,8 @@
 
 #define DIM 4
 
+int main(){
+    int a, b;
+    int matrix;
+    matrix = identityMatrix(a, b);
+}
