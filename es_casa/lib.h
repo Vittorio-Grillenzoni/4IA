@@ -1,8 +1,7 @@
-int countEvenOdd(int _n, int _v[], int _dim);
-
+void identityMatrix(int i, int m[i][j]);
 /**
- * Ritorna il numero degli elementi pari e di quelli dispari di un vettore di interi
- * 
- * 
- * 
- */
+ * riempie una matrice quadrata di zeri tranne la diagonale di uni (crea la matrice detta unitaria o identità)
+ * @param 
+ * @param
+ * @return
+*/
