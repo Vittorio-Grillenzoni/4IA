@@ -14,3 +14,13 @@ int StampaDieci(int _v[], int _dim){
         printf("%d \n", _v[i]);
     }
 }
+
+bool symmetricMatrix(int l; int m[l][l]){
+    for (int i = 0; i < DIM; i++) {
+        for (int j = 0; j < DIM; j++) {
+            if (m[i][j] != m[j][l]) {
+                return false;
+        }
+    }
+    return true;
+}
