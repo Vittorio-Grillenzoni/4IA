@@ -1,7 +1,14 @@
-/* symmetricMatrix(): verifica se lamatrice quadrata di interi è simmetrica, ovvero
-se m[i][j] == m[j][i] per tutti gli elementi*/
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "lib.c"
+
+#define DIM 10
+
+int main(){
+    int vett[DIM];
+
+    caricaVettore(vett, DIM, 5, 25);
+    stampaVettore(vett, DIM);
+    printf("\n");
+    
+    return 0;
+}
