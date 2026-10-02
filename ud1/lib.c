@@ -39,5 +39,15 @@ int getValoreAt(int _v[], int _dim, int _index){
 }
 
 bool stampaSubArray(int _v[], int _dim, int _index1, int _index2){
-    
+    if(_index1 < 0 || _index1 > _dim)
+        return false;
+    if(_index2 < 0 || _index2 > _dim)
+        return false;
+    if(_index1 == _index2)
+        return false;
+    if(_index1 > _index2)
+        return false;
+    for(int i=_index1; i<_index2; i++){
+        printf("%d", _v[i])
+    }
 }
