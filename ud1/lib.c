@@ -51,3 +51,21 @@ bool stampaSubArray(int _v[], int _dim, int _index1, int _index2){
         printf("%d", _v[i])
     }
 }
+//---------------------------------------------------------
+
+void caricaMatrice(int _rows, int _cols, int _m[_rows][_cols]){
+    for(int i=0; i<_rows){
+        for(int j=0; j<_cols){
+            _m[i][j] = 1 + rand()%25;
+        }
+    }
+}
+
+void stampaMatrice(int _rows, int _cols, int _m[_rows][_cols]){
+    for(int i=0; i<_rows){
+        for(int j=0; j<_cols){
+            printf("%3d", _m[i][j]);
+        }
+        printf("\n");
+    }
+}

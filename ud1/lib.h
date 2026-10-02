@@ -41,3 +41,20 @@ bool stampaSubArray(int _v[], int _dim, int _index1, int _index2);
  * @param int Indice finale
  * @return true se stampa è possibile, false se stampa non è possibile
 */
+//----------------------------------------------------------
+
+void caricaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
+/**
+ * Stampa una matrice di interi
+ * @param int Numero righe matrice
+ * @param int Numero colonne matrice
+ * @param int* Riferimento alla matrice dichiarata nel main
+*/
+
+void stampaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
+/**
+ * Stampa a video una matrice di interi
+ * @param int Numero righe matrice
+ * @param int Numero colonne matrice
+ * @param int* Riferimento alla matrice dichiarata nel main
+*/
