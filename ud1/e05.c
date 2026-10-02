@@ -6,7 +6,7 @@
 #define COLS 5  //definisco nr colonne della matrice
 
 int main(){
-    int matrix[ROWS][COLS]
+    int matrix[ROWS][COLS];
 
     caricaMatrice(ROWS, COLS, matrix);
     stampaMatrice(ROWS, COLS, matrix);
