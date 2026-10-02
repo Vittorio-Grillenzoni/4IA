@@ -5,3 +5,12 @@ void identityMatrix(int i, int m[i][j]);
  * @param
  * @return
 */
+
+int chessMatrix(int _rows, int _cols, int _m[_rows][_cols]);
+/**
+ * crea una matrice a scacchiera
+ * @param int numero di righe
+ * @param int numero colonne
+ * @param int* matrice
+ * @return
+*/
