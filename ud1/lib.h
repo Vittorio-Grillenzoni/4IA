@@ -22,3 +22,22 @@ float mediaVettore(int _v[], int _dim);
  * @param int Dimensione del vettore
  * @return valore medio calcolato
 */
+
+int getValoreAt(int _v[], int _dim, int _index);
+/**
+ * Restituisce il valore alla posizione indicata
+ * @param int* Riferimento al vettore
+ * @param int Dimensione del vettore
+ * @param int Indice scelto del vettore
+ * @return valore contenuto nella cella scelta
+*/
+
+bool stampaSubArray(int _v[], int _dim, int _index1, int _index2);
+/**
+ * Stampa il sotto array identificato tra index1 e index2
+ * @param int* Riferimento al vettore
+ * @param int Dimensione del vettore
+ * @param int Indice iniziale
+ * @param int Indice finale
+ * @return true se stampa è possibile, false se stampa non è possibile
+*/
