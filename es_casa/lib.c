@@ -7,3 +7,19 @@ int chessMatrix(int _rows, int _cols, int _m[_rows][_cols]){
         printf("\n");
     }
 }
+
+int maxSumM(int _rows, int _cols, int _m[_rows][_cols]){
+    int i, j, sum, maxM;
+    for(i=0; i<_rows; i++){
+        for(j=0; j<_cols; i++){
+            _m[i][j] = 1 + rand()%45;
+            if(maxM<_m[i][j]){
+                maxM=_m[i][j];
+            }
+            sum=sum + _m[i][j];
+        }
+        
+    }
+    return maxM;
+    return sum;
+}
