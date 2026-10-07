@@ -58,3 +58,12 @@ void stampaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
  * @param int Numero colonne matrice
  * @param int* Riferimento alla matrice dichiarata nel main
 */
+
+void ordinaVettore(int _v, int _dim, int _mode);
+/**
+ * Ordina un vettore in modo crescente o decescente a scelta dell'utente
+ * @param int* riferimento al vettore
+ * @param int Dimensione del vettore
+ * @param int Modo di ordinamento del vettore 
+*/
+

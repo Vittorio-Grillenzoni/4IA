@@ -70,3 +70,31 @@ void stampaMatrice(int _rows, int _cols, int _m[_rows][_cols]){
         printf("\n");
     }
 }
+
+void ordinaVettore(int _v, int _dim, int _mode){
+    int i, j;
+    int box;
+
+    if(_mode == 0){     //ordine decrescente
+        for(i=0; i<_dim; i++){
+            for(j=0; j<_dim; j++){
+                if(_v[j]<_v[i]){
+                    box = _v[i];
+                    _v[i] = _v[j];
+                    _v[j] = box;
+                }
+            }
+        }
+    }
+    if(_mode == 1){     //ordine crescente
+        for(i=0; i<_dim; i++){
+            for(j=0; j<_dim; j++){
+                if(_v[j]<_v[i]){
+                    box = _v[i];
+                    _v[i] = _v[j];
+                    _v[j] = box;
+                }
+            }
+        }
+    }
+}
