@@ -67,3 +67,18 @@ void ordinaVettore(int _v, int _dim, int _mode);
  * @param int Modo di ordinamento del vettore 
 */
 
+void mediaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
+/**
+ * trova la media totale di una matrice
+ * @param int righe
+ * @param int colonne
+ * @param int matrice
+*/
+
+void singolaSommaM(int _rows, int _cols, int _m[_rows][_cols]);
+/**
+ * Stampa della matrice con somma totale di ogni singola riga
+ * @param int righe
+ * @param int colonne
+ * @param int matrice
+*/

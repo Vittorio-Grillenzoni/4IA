@@ -98,3 +98,25 @@ void ordinaVettore(int _v, int _dim, int _mode){
         }
     }
 }
+
+void mediaMatrice(int _rows, int _cols, int _m[_rows][_cols]){
+    int sum =, int cnt=0, int m;
+    for(int i=0; i<_rows; i++){
+        for(int j=0; j<_cols; i++){
+            _m[i][j] = 1 + rand()%100;
+            sum = sum + _m[i][j];
+            cnt++;
+        }
+    }
+    m = sum/cnt;
+}
+
+void singolaSommaM(int _rows, int _cols, int _m[_rows][_cols]){
+    int sum;
+    for(int i=0; i<_rows; i++){
+        sum = 0;
+        for(int j=0; j<_cols; i++){
+            _m[i][j] = 1 + rand()%100;
+        }
+    }
+}
