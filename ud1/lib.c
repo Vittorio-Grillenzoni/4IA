@@ -120,3 +120,15 @@ void singolaSommaM(int _rows, int _cols, int _m[_rows][_cols]){
         }
     }
 }
+
+int VerificaVetMat(int _rows, int _cols, int _m[_rows][_cols], int _v[_cols], int _dim){
+    int i, j;
+    int cnt;
+    for(i=0; i<_dim; i++){
+        cnt = 0;
+        for(j=0; i<_dim; j++){
+            if(_m[i][j] == _v[j])
+                cnt++;
+        }
+    }
+}

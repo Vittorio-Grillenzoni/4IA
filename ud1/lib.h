@@ -82,3 +82,12 @@ void singolaSommaM(int _rows, int _cols, int _m[_rows][_cols]);
  * @param int colonne
  * @param int matrice
 */
+
+int VerificaVetMat(int _rows, int _cols, int _m[_rows][_cols], int _v[_cols]);
+/**
+ * Restituisce 0/1 se il vettore con un numero di celle uguali alle colonne è uguale almeno ad una riga 
+ * @param int righe
+ * @param int colonne
+ * @param int matrice
+ * @param int vettore
+*/
