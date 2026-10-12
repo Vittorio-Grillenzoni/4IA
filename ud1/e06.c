@@ -4,10 +4,10 @@
 #define DIM 5
 
 int main(){
-    int i, vet[i], val;
+    int i, vet[i], val, cnt;
     do{
         void creaCodiceSegreto(int i, int DIM);
         int richiediCodiceUtente(int i, int vet[i], int DIM);
-        int verificaStampaCodice(int i, int vet[i], int DIM, int val);
-    }while()
+        int verificaStampaCodice(int i, int vet[i], int DIM, int val, cnt);
+    }while(cnt == DIM);
 }
