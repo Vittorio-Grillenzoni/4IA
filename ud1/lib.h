@@ -91,3 +91,28 @@ int VerificaVetMat(int _rows, int _cols, int _m[_rows][_cols], int _v[_cols]);
  * @param int matrice
  * @param int vettore
 */
+
+void creaCodiceSegreto(int _i, int _v[i], int _dim);
+/**
+ * Genera un codice di 5 numeri
+ * @param int valore
+ * @param int vettore
+ * @param int dimensione del vettore
+*/
+
+int richiediCodiceUtente(int _i, int _v[i], int _dim);
+/**
+ * Richiede all'utente di inserire 5 numeri
+ * @param int valore
+ * @param int vettore
+ * @param int dimensione del vettore
+*/
+
+int verificaStampaCodice(int _i, int _v[i], int _dim, int _a);
+/**
+ * Verifica che i valori delle due funzioni precedenti siano uguali
+ * @param int indice
+ * @param int vettore
+ * @param int dimensione del vettore
+ * @param int valore
+*/

@@ -132,3 +132,26 @@ int VerificaVetMat(int _rows, int _cols, int _m[_rows][_cols], int _v[_cols], in
         }
     }
 }
+
+void creaCodiceSegreto(int _i, int _v[i]){
+    for(_i=0; _i<_dim; i++){
+        _v[i] = 0 + rand()%9;
+    }
+}
+
+int richiediCodiceUtente(int _i, int _v[i], int _dim){
+    for(_i=0; _i<_dim; i++){
+        scanf("%d", &_v[i]);
+    }
+}
+
+int verificaStampaCodice(int _i, int _v[i], int _dim, int _a){
+    int cnt;
+    for(_i=0; _i<_dim; i++){
+        if(_v[i] == _a)
+            printf("%d", _a);
+            cnt++;
+        else
+            printf("?");
+    }
+}
