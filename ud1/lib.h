@@ -1,119 +1,128 @@
-void caricaVettore(int _v[], int _dim, int _min, int _max);
 /**
  * Carica un vettore con valori random compresi tra un minimo e un massimo
- * passati come argomenti
- * @param int* Riferimento al vettore
- * @param int Dimensione del vettore
- * @param int Valore minimo del range
- * @param int Valore massimo del range
+ * passati come argomenti.
+ * @param int* Riferimento al vettore.
+ * @param int Dimensione del vettore.
+ * @param int Valore minimo del range.
+ * @param int Valore massimo del range.
  */
+void caricaVettore(int _v[], int _dim, int _min, int _max);
 
+/**
+ * Visualizza un vettore su singola riga
+ * @param int* Riferimento al vettore.
+ * @param int Dimensione del vettore.
+ */
 void stampaVettore(int _v[], int _dim);
-/**
- * visualizza un vettore su singola riga
- * @param int* Riferimento al vettore
- * @param int Dimensione del vettore
-*/
 
+/**
+ * Calcola e restituisce la media del vettore
+ * @param int* Riferimento al vettore.
+ * @param int Dimensione del vettore.
+ * @return Valore medio calcolato.
+ */
 float mediaVettore(int _v[], int _dim);
-/**
- * calcola e restituisce la media del vettore
- * @param int* Riferimento al vettore
- * @param int Dimensione del vettore
- * @return valore medio calcolato
-*/
 
+/**
+ * Restituisce il valore alla posizione indicata.
+ * @param int* Riferimento al vettore.
+ * @param int Dimensione del vettore.
+ * @param int Indice scelto del vettore.
+ * @return -1 se indice non esiste, altrimenti valore contenuto nella cella scelta.
+ */
 int getValoreAt(int _v[], int _dim, int _index);
-/**
- * Restituisce il valore alla posizione indicata
- * @param int* Riferimento al vettore
- * @param int Dimensione del vettore
- * @param int Indice scelto del vettore
- * @return valore contenuto nella cella scelta
-*/
 
+/**
+ * Stampa a video il sotto array identificato tra index1 e index2,
+ * con index1 minore di index2.
+ * @param int* Riferimento al vettore.
+ * @param int Dimensione del vettore.
+ * @param int Indice iniziale.
+ * @param int Indice finale.
+ * @return true se stampa è possibile, false se stampa non è possibile.
+ */
 bool stampaSubArray(int _v[], int _dim, int _index1, int _index2);
+
 /**
- * Stampa il sotto array identificato tra index1 e index2
+ * Ordina un vettore in modo crescente o decrescente a scelta dell'utente
  * @param int* Riferimento al vettore
  * @param int Dimensione del vettore
- * @param int Indice iniziale
- * @param int Indice finale
- * @return true se stampa è possibile, false se stampa non è possibile
-*/
-//----------------------------------------------------------
+ * @param int Modo di ordinamento 0 decrescente 1 crescente
+ */
+void ordinaVettore(int _v[], int _dim, int _mode);
 
+//---------------------------
+
+/**
+ * Carica una matrice con valori random compresi tra 1 e 25.
+ * @param int Numero righe della matrice.
+ * @param int Numero colonne della matrice.
+ * @param int* Riferimento alla matrice dichiara nel main.
+ */
 void caricaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
+
 /**
  * Stampa una matrice di interi
- * @param int Numero righe matrice
- * @param int Numero colonne matrice
- * @param int* Riferimento alla matrice dichiarata nel main
-*/
-
+ * @param int Numero righe della matrice.
+ * @param int Numero colonne della matrice.
+ * @param int* Riferimento alla matrice dichiara nel main.
+ */
 void stampaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
+
 /**
- * Stampa a video una matrice di interi
- * @param int Numero righe matrice
- * @param int Numero colonne matrice
- * @param int* Riferimento alla matrice dichiarata nel main
+ * Carica una matrice con 0/1 alternati
+ * @param int Numero righe della matrice.
+ * @param int Numero colonne della matrice.
+ * @param int* Riferimento alla matrice dichiara nel main.
+ */
+void caricaMatriceScacchiera(int _rows, int _cols, int _m[_rows][_cols]);
+
+/* provare a creare le funzioni per le seguenti richieste:
+1. Calcolo del valor medio della matrice.
+2. Stampa della matrice con somma totale di ogni singola riga.
+3. Somma totale del triangolo inferiore e del triangolo superiore.
 */
 
-void ordinaVettore(int _v, int _dim, int _mode);
 /**
- * Ordina un vettore in modo crescente o decescente a scelta dell'utente
- * @param int* riferimento al vettore
- * @param int Dimensione del vettore
- * @param int Modo di ordinamento del vettore 
-*/
+ * Calcola e restituisce il valor medio della matrice.
+ * @param int Numero di righe della matrice.
+ * @param int Numero di colonne della matrice.
+ * @param int* Riferimento alla matrice.
+ * @return Valor medio della matrice.
+ */
+float calcolaMediaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
 
-void mediaMatrice(int _rows, int _cols, int _m[_rows][_cols]);
 /**
- * trova la media totale di una matrice
- * @param int righe
- * @param int colonne
- * @param int matrice
-*/
+ * Stampa matrice con somme riga
+ * @param int Numero di righe della matrice.
+ * @param int Numero di colonne della matrice.
+ * @param int* Riferimento alla matrice.
+ */
+void stampaSommeRigheMatrice(int _rows, int _cols, int _m[_rows][_cols]);
 
-void singolaSommaM(int _rows, int _cols, int _m[_rows][_cols]);
 /**
- * Stampa della matrice con somma totale di ogni singola riga
- * @param int righe
- * @param int colonne
- * @param int matrice
-*/
+ * Stampa la somma del triangolo superiore ed inferiore di una matrice QUADRATA
+ * @param int Numero di righe della matrice.
+ * @param int Numero di colonne della matrice.
+ * @param int* Riferimento alla matrice.
+ */
+void triangoloInfSupMatrice(int _rows, int _cols, int _m[_rows][_cols]);
 
-int VerificaVetMat(int _rows, int _cols, int _m[_rows][_cols], int _v[_cols]);
+/**
+* Verifica se un vettore è uguale ad almeno una riga della matrice; il vettore
+* deve avere domensione pari al numero di colonne della matrice.
+* @param int Numero di righe della matrice.
+* @param int Numero di colonne della matrice.
+* @param int* Riferimento alla matrice.
+* @param int* Riferimento al vettore.
+*/
+bool trovaVettoreMatrice(int _rows, int _cols, int _m[_rows][_cols], int _v[_cols]);
+
 /**
  * Restituisce 0/1 se il vettore con un numero di celle uguali alle colonne è uguale almeno ad una riga 
  * @param int righe
  * @param int colonne
  * @param int matrice
- * @param int vettore
+ * @param int dimensione della matrice
 */
-
-void creaCodiceSegreto(int _i, int _v[_i], int _dim);
-/**
- * Genera un codice di 5 numeri
- * @param int valore
- * @param int vettore
- * @param int dimensione del vettore
-*/
-
-int richiediCodiceUtente(int _i, int _v[_i], int _dim);
-/**
- * Richiede all'utente di inserire 5 numeri
- * @param int valore
- * @param int vettore
- * @param int dimensione del vettore
-*/
-
-int verificaStampaCodice(int _i, int _v[_i], int _dim, int _a, int _cnt);
-/**
- * Verifica che i valori delle due funzioni precedenti siano uguali
- * @param int indice
- * @param int vettore
- * @param int dimensione del vettore
- * @param int valore
- * @param int contatore
-*/
+int randomM(int _rows, int _cols, int _m[_rows][_cols], int _dim);

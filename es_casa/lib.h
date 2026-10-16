@@ -23,3 +23,14 @@ int differentM(int _rows, int _cols, int _m[_rows][_cols]);
  * @param int* matrice
  * @return
 */
+
+bool MirrorM(int _rows, int _cols, int _m[_rows][_cols], int _dim, int _mir);
+/**
+ * identifica se la matrice è specchiata
+ * @param int numero di righe
+ * @param int numero colonne
+ * @param int* matrice
+ * @param int dimensione della matrice
+ * @param int indica se la matrice è specchiata
+ * @return
+*/

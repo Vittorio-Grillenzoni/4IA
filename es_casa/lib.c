@@ -40,3 +40,13 @@ int differentM(int _rows, int _cols, int _m[_rows][_cols]){
         
     }
 }
+
+bool MirrorM(int _rows, int _cols, int _m[_rows][_cols], int _dim, int _mir){
+    for(int i=0; i<_dim; i++){
+        for(int j=0; j<_dim; j++){
+            if(_m[_rows][_cols] != _m[_rows - 1 - j][_cols])
+                return false;
+        }
+    }
+    return true
+}
