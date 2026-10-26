@@ -34,3 +34,10 @@ bool MirrorM(int _rows, int _cols, int _m[_rows][_cols], int _dim, int _mir);
  * @param int indica se la matrice è specchiata
  * @return
 */
+
+void strcat2(char* dst, char* s, char* end);
+/**
+ * @param char* distanza?
+ * @param char* stringa
+ * @param char* fine della stringa
+*/

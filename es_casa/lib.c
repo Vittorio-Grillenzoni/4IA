@@ -1,3 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <stdbool.h>
+#include "lib.h" 
+
 int chessMatrix(int _rows, int _cols, int _m[_rows][_cols]){
     int i, j;
     for(i=0; i<_rows; i++){
@@ -49,4 +56,13 @@ bool MirrorM(int _rows, int _cols, int _m[_rows][_cols], int _dim, int _mir){
         }
     }
     return true
+}
+
+void strcat2(char* dst, char* s, char* end){
+    for(int i=0; dst[i]!=end; i++){
+        for(int j=0; s[j]!=end; j++){
+            if(dst[i] == s[j])
+                dst[i] = end;
+        }
+    }
 }
