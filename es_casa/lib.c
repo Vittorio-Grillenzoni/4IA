@@ -66,3 +66,16 @@ void strcat2(char* dst, char* s, char* end){
         }
     }
 }
+
+int strcmp(char* s1[], char* s2[]){
+    int end=0;
+    while((s1[end] && s2[end] != '\0') || (s1[end] || s2[end] == '\0'))
+        if(s1[end] || s2[end] == '\0')
+            if(s1 < s2)
+                printf("<0");
+            if(s1 == s2)
+                printf("0");
+            if(s1 > s2)
+                printf(">0");
+
+}

@@ -41,3 +41,9 @@ void strcat2(char* dst, char* s, char* end);
  * @param char* stringa
  * @param char* fine della stringa
 */
+
+int strcmp(char* s1[], char* s2[]);
+/**
+ * @param char* Prima stringa
+ * @param char* Seconda stringa
+*/
