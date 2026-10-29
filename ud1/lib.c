@@ -206,3 +206,19 @@ bool trovaVettoreMatrice(int _rows, int _cols, int _m[_rows][_cols], int _v[_col
     // SOLO SE nessuna riga è uguale al vettore allora eseguo una return FALSE.
     return false;
 }
+
+bool scacchieraM(int l, int m[l][l]) {
+	int m00 = m[0][0], m01 = m[0][1];
+	// i due primi elementi devono essere 0 o 1 e diversi tra loro
+	if (m00 != 0 && m00 != 1 || m01 != 0 && m01 != 1 || m00 == m01)
+		return false;
+	for (int i = 0; i < l; i++)
+		for (int j = 0; j < l; j++) {
+			bool sommaIndiciPari = (i + j) % 2 == 0; // la somma degli indici è pari?
+			if (sommaIndiciPari && m[i][j] != m00) // se somma indici pari: deve essere == m00
+				return false;
+			if (! sommaIndiciPari && m[i][j] != m01) // se somma indici dispari: deve essere == m01
+				return false;
+		}
+ 	return true;
+}
