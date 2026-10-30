@@ -1,7 +1,7 @@
 #include "VG.c"
 
 int main(){
-    signal(SIGINT, termina)
+    signal(SIGINT, termina);
     clear();
     pingPong(10, 30, 10, '0', 500);
     /*printf("aspetta...");
