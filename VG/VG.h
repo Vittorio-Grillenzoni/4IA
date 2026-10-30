@@ -9,5 +9,15 @@
 per tot millisecondi (mettilo in pausa) */
 void msSleep(int millis);
 
-/** usa una "ASCII escape sequence" per muovere il cursore alla posizione x y */
+/** usa una "ASCII escape sequence" per muovere il cursore
+ alla posizione x y */
 void goTo(int x, int y);
+
+/** pulisce lo schermo */
+void clear();
+
+/*bo*/
+void pingPong(int startCol, int endCol, int row, char c, int millis);
+
+/** intercetta CTRL -C */
+void termina();

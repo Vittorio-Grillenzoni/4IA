@@ -1,10 +1,5 @@
-#define _P0SIX_C_SOURCE 199309L
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <time.h>   //nanosleep();
-#include <signal.h> //intercept CTRL-C
 #include "VG.h"
+
 
 void msSleep(int millis){
     struct timespec delay;
@@ -18,4 +13,27 @@ void msSleep(int millis){
 void goTo(int x, int y){
     printf("\033[%d;%dH", y+1, x+1);
     fflush(stdout);
+}
+
+void clear(){
+    printf("\033[2J\033[H");
+    fflush(stdout);
+}
+
+void pingPong(int startCol, int endCol, int row, char c, int millis){
+    int col = startCol;
+    while(true){
+        goTo(col, row);
+        printf("%c", c);
+        fflush(stdout);
+
+        msSleep(millis);
+        col++;
+    }
+}
+
+void termina(){
+    //showcursor();
+    printf("adieu...\n");
+    exit(0);
 }
