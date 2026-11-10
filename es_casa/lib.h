@@ -47,3 +47,30 @@ int strcmp(char* s1[], char* s2[]);
  * @param char* Prima stringa
  * @param char* Seconda stringa
 */
+
+bool substrAtPos(char *s, int pos, char *subStr);
+/**
+ * @param char* Prima stringa
+ * @param int posizione
+ * @param char* sottostringa
+*/
+
+int findsubStr(char *s, char *subStr);
+/**
+ * @param char* Stringa
+ * @param char* sottostringa
+*/
+
+bool repeatedChars(char s[], char p);
+/**
+ * @param char* Stringa
+ * @param char* Riferimento
+*/
+//-----------------------------------------
+
+int removeChar(char s[], char del);
+/**
+ * @param char Stringa
+ * @param char Cancella
+ * @return Parola aggiornata
+ */

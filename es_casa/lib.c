@@ -79,3 +79,43 @@ int strcmp(char* s1[], char* s2[]){
                 printf(">0");
 
 }
+
+bool substrAtPos(char *s, int pos, char *subStr){
+    for(int i=0, s[i]!='\0'; i++){
+        if(s[i]==pos){
+            if(s[i]==substr[i]){
+                return true;
+            }
+            else{
+                return false
+            }
+        }
+    }
+}
+
+int findsubStr(char *s, char *subStr){
+    for(int i=0, s[i]!='\0'; i++){
+        if(s[i]==subStr[i]){
+            return subStr[i];
+        }
+    }
+}
+
+bool repeatedChars(char s[], char p){
+    int i=0;
+    while(s[i]!='\0'){
+        if(s[i]==p[i]){
+            return true;
+        }
+    }
+    return false;
+}
+//--------------------------------------------
+
+int removeChar(char s[], char del){
+    for(int i=0, s[i]!='\0'; i++){
+        if(s[i]==del){
+            s[i+1]='127';
+        }
+    }
+}

@@ -10,5 +10,5 @@
 int main(){
     int matrix[ROWS][COLS];
 
-    chessMatrix(ROWS, COLS, matrix[ROWS][COLS]);
+    
 }
