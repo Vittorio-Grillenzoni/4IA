@@ -31,7 +31,9 @@ void stampaContrario(char _s[]);
  */
 int contaCarattere(char _str[], char _src);
 
+bool Anagramma(char _s1[], char _s2[]);
 /**
- * 
- * 
+ * Trova se un è possibile un anagramma
+ * @param char* Riferimento al vettore 1
+ * @param char* Riferimento al vettore 2
  */

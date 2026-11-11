@@ -50,3 +50,18 @@ int contaCarattere(char _str[], char _src){
 
     return cnt;
 }
+
+bool Anagramma(char _s1[], char _s2[]){
+    int cnt=0;
+    int i;
+    for(i=0; _s1[i]!='\0'; i++){
+        if(_s1[i]==_s2[i])
+            cnt++;
+    }
+    if(_s2[i]!='\0'){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
