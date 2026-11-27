@@ -15,7 +15,7 @@ int main(){
 
     // --- estensione esercizio utilizzando un vettore di 3 elementi.
     for(int i=0; i<DIM; i++){
-        inputShape(...);
+        inputShape(vectorShape[i]);
     }    
 
     for(int i=0; i<DIM; i++){
